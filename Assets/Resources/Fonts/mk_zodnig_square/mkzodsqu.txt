@@ -1,0 +1,15 @@
+MK Zodnig Square. 2000; 1.1
+Copyright (c) Frank Flachs, 2000. All rights reserved.
+MK Zodnig and MK Zodnig Square are trademarks of Frank Flachs.
+
+if you use this font make sure you use it BIG. sizes smaller than 
+28 usually don't work the way they're supposed to. italic and bold
+versions are under construction at the moment and should be ready
+for release by may 2000.
+mk zodnig round might be on its way, too. who knows?
+
+for ideas, comments etc. please feel free to write to
+fkflachs@phil.uni-erlangen.de
+
+this font is free as long as it is distributed together with this
+txt-file.
