@@ -32,13 +32,11 @@ public class TournamentPanelController : MonoBehaviour
     {
         tournamentPanel.SetActive(true);
         gameplayUI.SetActive(false);
-        Time.timeScale = 0f;
     }
 
     public void CloseTournament()
     {
         tournamentPanel.SetActive(false);
         gameplayUI.SetActive(true);
-        Time.timeScale = 1f;
     }
 }

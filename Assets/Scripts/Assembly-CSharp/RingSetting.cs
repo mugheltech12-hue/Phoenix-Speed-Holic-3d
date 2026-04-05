@@ -39,4 +39,5 @@ public class RingSetting : MonoBehaviour
         // Ring ka center world position return karo
         return mTransform.position;
     }
+
 }

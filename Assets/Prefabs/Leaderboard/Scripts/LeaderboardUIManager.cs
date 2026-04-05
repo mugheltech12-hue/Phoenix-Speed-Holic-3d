@@ -25,15 +25,13 @@ public class LeaderboardUIManager : MonoBehaviour
 
     void Start()
     {
-        LeaderboardManager.Instance.OnWeeklyFetched += OnFetched;
-        LeaderboardManager.Instance.OnDailyFetched += OnFetched;
-        LeaderboardManager.Instance.OnMonthlyFetched += OnFetched;
-
         closeBtn.onClick.AddListener(() => leaderboardPanel.SetActive(false));
         leaderboardPanel.SetActive(false);
+
+        // ✅ Event subscribe NAHI karo — panel khulne par seedha fetch karega
+        // Card wale events se panel update nahi hoga
     }
 
-    // ✅ Card ka leaderboard button yeh call karega
     public void OpenPanelForType(TournamentType type)
     {
         currentType = type;
@@ -52,7 +50,20 @@ public class LeaderboardUIManager : MonoBehaviour
                 break;
         }
 
-        LeaderboardManager.Instance.FetchLeaderboard(type, 100);
+        // ✅ Panel ka apna alag fetch — 100 results, card se alag
+        LeaderboardManager.Instance.FetchForPanel(type, 100, OnPanelFetched);
+    }
+
+    public void ClearPanel()
+    {
+        foreach (Transform child in contentParent)
+            Destroy(child.gameObject);
+
+        // Empty message dikhao
+        GameObject row = Instantiate(playerRowPrefab, contentParent);
+        row.transform.Find("RankText").GetComponent<TMP_Text>().text = "";
+        row.transform.Find("NameText").GetComponent<TMP_Text>().text = "Koi players nahi abhi";
+        row.transform.Find("ScoreText").GetComponent<TMP_Text>().text = "";
     }
 
     public void OpenPanel()
@@ -60,7 +71,8 @@ public class LeaderboardUIManager : MonoBehaviour
         OpenPanelForType(TournamentType.Weekly);
     }
 
-    void OnFetched(List<PlayerLeaderboardEntry> entries)
+    // ✅ Sirf panel ke liye callback — card wale event se nahi
+    void OnPanelFetched(List<PlayerLeaderboardEntry> entries)
     {
         PopulateList(entries);
     }
@@ -69,6 +81,15 @@ public class LeaderboardUIManager : MonoBehaviour
     {
         foreach (Transform child in contentParent)
             Destroy(child.gameObject);
+
+        if (entries.Count == 0)
+        {
+            GameObject row = Instantiate(playerRowPrefab, contentParent);
+            row.transform.Find("RankText").GetComponent<TMP_Text>().text = "";
+            row.transform.Find("NameText").GetComponent<TMP_Text>().text = "Koi players nahi abhi";
+            row.transform.Find("ScoreText").GetComponent<TMP_Text>().text = "";
+            return;
+        }
 
         foreach (var entry in entries)
         {
@@ -79,18 +100,13 @@ public class LeaderboardUIManager : MonoBehaviour
             TMP_Text scoreText = row.transform.Find("ScoreText").GetComponent<TMP_Text>();
 
             rankText.text = $"#{entry.Position + 1}";
-            nameText.text = entry.DisplayName ?? "Player";
+            nameText.text = !string.IsNullOrEmpty(entry.DisplayName)
+                ? entry.DisplayName
+                : $"Player_{entry.PlayFabId?.Substring(0, 8) ?? "Unknown"}";
             scoreText.text = entry.StatValue.ToString();
         }
     }
 
-    void OnDestroy()
-    {
-        if (LeaderboardManager.Instance != null)
-        {
-            LeaderboardManager.Instance.OnWeeklyFetched -= OnFetched;
-            LeaderboardManager.Instance.OnDailyFetched -= OnFetched;
-            LeaderboardManager.Instance.OnMonthlyFetched -= OnFetched;
-        }
-    }
+    // OnDestroy mein kuch nahi — events subscribe hi nahi kiye
+    void OnDestroy() { }
 }

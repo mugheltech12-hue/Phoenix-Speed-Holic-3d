@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,6 +8,8 @@ using UnityEngine.Video;
 
 public class PausingManager : MonoBehaviour
 {
+
+
     public static PausingManager Instance;
     private int state;
 
@@ -31,7 +34,7 @@ public class PausingManager : MonoBehaviour
     public Button leaderBoardButton;
     public GameObject soundOnButton, soundOffButton;
     public GameObject completePlayButton, completeSoundButton;
-    public GameObject gameNameObject, ppButtonsParent, ppPlayButton, ppPauseButton;
+    public GameObject gameNameObject, ppButtonsParent, ppPlayButton, ppPauseButton, ppResumeButton;
 
     [Header("Music Components")]
     public AudioSource audioSource;
@@ -44,6 +47,13 @@ public class PausingManager : MonoBehaviour
 
 
     private Coroutine countDownCoroutine;
+
+
+    public bool isGameActive = false;
+
+    //[Header("Tournament End Notification")]
+    //public GameObject tournamentEndedNotification;
+    //public TMP_Text tournamentEndedText; // ✅ Text component
 
     // Resume ke liye track karna ke game paused tha ya nahi
     private bool isResuming = false;
@@ -58,6 +68,13 @@ public class PausingManager : MonoBehaviour
         state = 2;
         OnPlayMusic();
         PlayerPrefs.SetInt("FirstPlay", 1);
+
+        ppPauseButton.SetActive(true);
+        ppPauseButton.GetComponent<Button>().interactable = false;
+        ppResumeButton.SetActive(false);
+
+
+
     }
 
     private void Update()
@@ -110,6 +127,7 @@ public class PausingManager : MonoBehaviour
     // =============================================
     public void OnPauseButtonPressed()
     {
+        TournamentPanelController.Instance.OpenTournament(); // ✅ Tournament panel kholo
         // Game ki speed rok do
         previousZSpeed = gameManager.speedZ;
         gameManager.speedZ = 0f;
@@ -118,9 +136,9 @@ public class PausingManager : MonoBehaviour
         // Gameplay buttons hide karo
         ppPauseButton.SetActive(false);
         ppButtonsParent.SetActive(false);
-
+        ppResumeButton.SetActive(true);
         // Pause Panel show karo
-        pausPanel.SetActive(true);
+        //pausPanel.SetActive(true);
 
         // Countdown rok do agar chal raha ho
         if (countDownCoroutine != null)
@@ -138,8 +156,16 @@ public class PausingManager : MonoBehaviour
     public void OnResumeButtonPressed()
     {
         // Pause panel band karo
-        pausPanel.SetActive(false);
+        //pausPanel.SetActive(false);
 
+
+        ppPauseButton.SetActive(true);
+        ppResumeButton.SetActive(false);
+
+        if (AdsManager.Instance != null)
+        {
+            AdsManager.Instance.ShowInterstitial();
+        }
         // Documentation ke mutabiq:
         // 1. Pehle Interstitial Ad dikhao
         // 2. Phir Counter (3,2,1)
@@ -156,6 +182,8 @@ public class PausingManager : MonoBehaviour
     public void OnInterstitialAdClosed()
     {
         // Counter show karo middle mein
+
+        TournamentPanelController.Instance.CloseTournament(); // ✅ Tournament panel band karo
         startCountText.gameObject.SetActive(true);
 
         if (countDownCoroutine != null)
@@ -203,6 +231,7 @@ public class PausingManager : MonoBehaviour
     // =============================================
     public void PauseGameOver()
     {
+        isGameActive = false; // ✅ add karo
         if (gameManager.score - 1 > PlayerPrefs.GetInt("HighScores"))
         {
             PlayerPrefs.SetInt("HighScores", gameManager.score);
@@ -210,7 +239,7 @@ public class PausingManager : MonoBehaviour
 
         previousZSpeed = gameManager.speedZ;
         gameManager.speedZ = 0f;
-        BlinkImage.Instance.ChangeColor();
+        //BlinkImage.Instance.ChangeColor();
         state = 0;
 
         ppPauseButton.SetActive(false);
@@ -228,6 +257,33 @@ public class PausingManager : MonoBehaviour
           && TicketManager.Instance.pinkTickets >= 1;
 
         continueTournamentBtn.SetActive(showContinue);
+
+        if (TournamentCard.PendingLeaderboardOpen)
+        {
+            TournamentCard.PendingLeaderboardOpen = false;
+
+            // ✅ Fail panel par message dikhao
+            //if (tournamentEndedText != null)
+            //    tournamentEndedText.text = "🏆 Tournament Results Tayar Hain!";
+
+            //if (tournamentEndedNotification != null)
+            //    tournamentEndedNotification.SetActive(true);
+
+            // 1 second delay ke baad leaderboard kholo
+            StartCoroutine(OpenLeaderboardAfterDelay(
+                TournamentCard.PendingLeaderboardType_Static, 1f));
+        }
+    }
+
+
+    IEnumerator OpenLeaderboardAfterDelay(TournamentType type, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        //if (tournamentEndedNotification != null)
+        //    tournamentEndedNotification.SetActive(false);
+
+        LeaderboardUIManager.Instance.OpenPanelForType(type);
     }
 
     // ✅ PausingManager.cs — OnTournamentContinuePressed() aur ContinueCountDown() replace karo
@@ -334,10 +390,13 @@ public class PausingManager : MonoBehaviour
     //}
     public void OnRetryButtonPressed()
     {
+        // ✅ Tournament end karo before reload
+        if (TournamentManager.Instance != null && TournamentManager.Instance.isInTournament)
+            TournamentManager.Instance.EndTournament(true);
+
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
     // =============================================
     // PLAY BUTTON (Home Screen se pehli baar)
     // =============================================
@@ -404,17 +463,18 @@ public class PausingManager : MonoBehaviour
 
     public IEnumerator OnPlayButtonPressed()
     {
+        isGameActive = true; // ✅ add karo
         Time.timeScale = 1;// UI Setup
 
         scoreText.gameObject.SetActive(false);
         startCountText.gameObject.SetActive(true);
-        soundOnButton.SetActive(false);
+        //soundOnButton.SetActive(false);
         leaderBoardButton.gameObject.SetActive(false);
         playButton.SetActive(false);
         gameNameObject.SetActive(false);
         ppPauseButton.SetActive(false);
         ppButtonsParent.SetActive(false);
-        completeSoundButton.SetActive(false);
+        //completeSoundButton.SetActive(false);
 
         // Sirf ek baar countdown
         startCountText.text = "3";
@@ -526,16 +586,34 @@ public class PausingManager : MonoBehaviour
     {
         previousZSpeed = gameManager.speedZ;
         state = 2;
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         gameManager.speedZ = 0f;
         playButton.SetActive(true);
         ppPauseButton.SetActive(false);
-        soundOnButton.SetActive(true);
+        //soundOnButton.SetActive(true);
         completeSoundButton.SetActive(true);
+
+
     }
 
     private void OnApplicationQuit()
     {
         PlayerPrefs.SetInt("VideoPlayed", 0);
+    }
+
+
+    public void ResetUIForNewGame()
+    {
+        // Hide any active panels
+        failPanel.SetActive(false);
+        if (pausPanel != null) pausPanel.SetActive(false);
+
+        // Reset game-active flag
+        isGameActive = false;
+
+        // Restore speed reference so PlayGame() works correctly
+        //previousZSpeed = gameManager.initialSpeedZ; // see note below
+
+        previousZSpeed = 15f;
     }
 }

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Unity Projects\\PhoenixGod\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9023395E-1F4F-292B-D558-F6665F619C6A}|Assembly-CSharp.csproj|D:\\Unity Projects\\PhoenixGod\\assets\\scripts\\codes\\pausingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9023395E-1F4F-292B-D558-F6665F619C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\codes\\pausingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9023395E-1F4F-292B-D558-F6665F619C6A}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\playfabloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9023395E-1F4F-292B-D558-F6665F619C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\playfabloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PausingManager.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Codes\\PausingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Codes\\PausingManager.cs",
+              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Codes\\PausingManager.cs*",
+              "RelativeToolTip": "Assets\\Scripts\\Codes\\PausingManager.cs*",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAqwB0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T17:58:52.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayFabLoginManager.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\PlayFabLoginManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\PlayFabLoginManager.cs",
+              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\PlayFabLoginManager.cs",
+              "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\PlayFabLoginManager.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAEBUwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T17:17:10.344Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

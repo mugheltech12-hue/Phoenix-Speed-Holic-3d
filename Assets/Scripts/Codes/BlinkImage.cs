@@ -1,94 +1,49 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BlinkImage : MonoBehaviour
 {
     public static BlinkImage Instance;
 
     public BlinkStarIndexSO blinkStarIndexSO;
-
-    public float blinkSpeed = 1f; // Speed of the blinking effect
-    private Image image;
-    private bool increasingAlpha = false;
-    private float alpha = 1f;
-
     public Color[] starBlinkColors;
 
-    private Color currentColor;
-    private int colorNumber=0;
-
-    private int randNumber = 0;
-
-    
-
-    //red, orange, yellow, green, blue, purple & pink
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         Instance = this;
     }
 
-    public void ChangeColor()
-    {
-        //var currentRandomNumber = randNumber;
-        //randNumber = Random.Range(0, 6);
-        
-
-    }
-
     void Start()
     {
-        image = GetComponent<Image>();
-        if (image == null)
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
         {
-            Debug.LogError("BlinkImage script requires an Image component on the same GameObject.");
-        }
-        var blinkStarNumber = blinkStarIndexSO.currentIndex;
-        if (blinkStarNumber < 7)
-        {
-            image.color = starBlinkColors[blinkStarNumber];
-            blinkStarIndexSO.currentIndex += 1;
-        }
-        else {
-            image.color = starBlinkColors[0];
-
-            blinkStarIndexSO.currentIndex = 0;
+            Debug.LogError("SpriteRenderer nahi mila!");
+            return;
         }
 
+        // Start pe current index wala color laga do
+        ApplyCurrentColor();
     }
 
-    //red, orange, yellow, green, blue, purple & pink
-
-    void Update()
+    // ✅ Har baar play press ho tab yeh call hoga
+    public void ChangeColor()
     {
-        if (image != null)
-        {
-            // Adjust alpha value over time
-            if (increasingAlpha)
-            {
-                alpha += Time.deltaTime * blinkSpeed;
-                if (alpha >= 1f)
-                {
-                    alpha = 1f;
-                    increasingAlpha = false;
-                }
-            }
-            else
-            {
-                alpha -= Time.deltaTime * blinkSpeed;
-                if (alpha <= 0.3f)
-                {
-                    alpha = 0f;
-                    increasingAlpha = true;
-                }
-            }
+        blinkStarIndexSO.currentIndex++;
 
-            // Apply the alpha change
-            Color newColor = image.color;
-            newColor.a = alpha;
-            image.color = newColor;
-        }
+        if (blinkStarIndexSO.currentIndex >= starBlinkColors.Length)
+            blinkStarIndexSO.currentIndex = 0;
+
+        ApplyCurrentColor();
     }
+
+    private void ApplyCurrentColor()
+    {
+        if (spriteRenderer != null && starBlinkColors.Length > 0)
+            spriteRenderer.color = starBlinkColors[blinkStarIndexSO.currentIndex];
+    }
+
     private void OnApplicationQuit()
     {
         blinkStarIndexSO.currentIndex = 0;

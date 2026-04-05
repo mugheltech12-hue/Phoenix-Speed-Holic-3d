@@ -11,7 +11,8 @@ public class TournamentUIManager : MonoBehaviour
     public TMP_Text freeTicketTimerText;
     public Button claimFreeTicketBtn;
     public Button getItNowBtn;
-    public TMP_Text ticketCountText;
+    public TMP_Text PinkTicket;
+    public TMP_Text GoldenTicket;
     public Button leaderboardBtn;
     public Button rulesBtn;
 
@@ -52,7 +53,7 @@ public class TournamentUIManager : MonoBehaviour
         //quitBtn.onClick.AddListener(OnQuit);
 
         // ✅ Weekly = Unlocked, Daily + Monthly = Locked
-        weeklyCard.SetUnlocked("WEEKLY TOURNAMENT", "$50 Gift Card", GetWeeklyTimer());
+        weeklyCard.SetUnlocked("WEEKLY TOURNAMENT", "$50 Gift Card");
         dailyCard.SetLocked();
         monthlyCard.SetLocked();
 
@@ -75,13 +76,14 @@ public class TournamentUIManager : MonoBehaviour
 
     void RefreshTicketUI()
     {
-        ticketCountText.text = $"{TicketManager.Instance.pinkTickets}x";
+        PinkTicket.text = $"{TicketManager.Instance.pinkTickets}x";
+        GoldenTicket.text = $"{TicketManager.Instance.goldenTickets}x";
     }
 
     void UpdateTimerText(string timeStr)
     {
         bool ready = timeStr == "0h 0m";
-        freeTicketTimerText.text = ready ? "FREE NOW!" : $"FREE IN\n{timeStr}";
+        freeTicketTimerText.text = ready ? "FREE NOW!" : $"{timeStr}";
         claimFreeTicketBtn.interactable = ready;
     }
 
@@ -93,7 +95,24 @@ public class TournamentUIManager : MonoBehaviour
 
     void OnAdBtn()
     {
-        TicketManager.Instance.OnAdWatched();
+        AdsManager.Instance.ShowRewardedVideo((result) =>
+        {
+            if (result == AdsResult.Finished)
+            {
+                TicketManager.Instance.OnAdWatched();
+                Debug.Log("Player ko reward mila!");
+            }
+            else if (result == AdsResult.Skipped)
+            {
+                Debug.Log("Player ne skip kiya.");
+            }
+            else
+            {
+                Debug.Log("Ad fail ho gayi.");
+            }
+        });
+
+      
     }
 
     //void ShowContinuePanel()

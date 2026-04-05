@@ -17,20 +17,29 @@ public class TicketManager : MonoBehaviour
     private DateTime lastFreeTicketTime;
     private Coroutine timerCoroutine;
 
-    // Events — UI inhe sun ke update hogi
     public Action OnTicketsUpdated;
-    public Action<string> OnTimerUpdated;  // "2h 30m" format
+    public Action<string> OnTimerUpdated;
     public Action OnFreeTicketReady;
     public Action<string> OnError;
 
     void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        Instance = this;
+       
     }
 
     void Start()
     {
+        StartCoroutine(WaitForPlayFabLogin());
+    }
+
+    // ✅ FIX 1: PlayFab login ka wait karo, phir sab initialize karo
+    IEnumerator WaitForPlayFabLogin()
+    {
+        // PlayFab login hone ka wait — jab tak SessionTicket nahi milta
+        yield return new WaitUntil(() =>
+            PlayFabClientAPI.IsClientLoggedIn());
+
         FetchTicketBalance();
         LoadFreeTicketTimer();
     }
@@ -79,7 +88,6 @@ public class TicketManager : MonoBehaviour
             pinkTickets = result.Balance;
             OnTicketsUpdated?.Invoke();
             onSuccess?.Invoke();
-            Debug.Log($"PT spent! Remaining: {pinkTickets}");
         },
         error =>
         {
@@ -89,7 +97,7 @@ public class TicketManager : MonoBehaviour
     }
 
     // =============================================
-    // ADD PINK TICKET (ad reward ya free claim)
+    // ADD PINK TICKET
     // =============================================
     public void AddPinkTicket(int amount)
     {
@@ -104,13 +112,12 @@ public class TicketManager : MonoBehaviour
         {
             pinkTickets = result.Balance;
             OnTicketsUpdated?.Invoke();
-            Debug.Log($"PT added! Total: {pinkTickets}");
         },
         error => OnError?.Invoke(error.ErrorMessage));
     }
 
     // =============================================
-    // ADD GOLDEN TICKET (tournament win pe)
+    // ADD GOLDEN TICKET
     // =============================================
     public void AddGoldenTicket(int amount)
     {
@@ -125,27 +132,41 @@ public class TicketManager : MonoBehaviour
         {
             goldenTickets = result.Balance;
             OnTicketsUpdated?.Invoke();
-            Debug.Log($"GT added! Total: {goldenTickets}");
         },
         error => OnError?.Invoke(error.ErrorMessage));
     }
 
     // =============================================
-    // FREE TICKET TIMER (12 hrs)
+    // FREE TICKET TIMER
     // =============================================
     public void LoadFreeTicketTimer()
     {
         string saved = PlayerPrefs.GetString("LastFreeTicketTime", "");
+
         if (string.IsNullOrEmpty(saved))
         {
-            // Pehli baar — abhi claim karo
+            // Pehli baar — seedha claim allow karo
             lastFreeTicketTime = DateTime.UtcNow.AddHours(-freeTicketIntervalHours);
         }
         else
         {
-            lastFreeTicketTime = DateTime.Parse(saved);
+            // ✅ FIX 2: Safe parsing — locale issue se bachao
+            if (!DateTime.TryParse(saved, null,
+                System.Globalization.DateTimeStyles.RoundtripKind,
+                out lastFreeTicketTime))
+            {
+                // Parse fail ho toh reset karo
+                Debug.LogWarning("Timer parse fail — reset kar raha hoon");
+                lastFreeTicketTime = DateTime.UtcNow.AddHours(-freeTicketIntervalHours);
+            }
         }
 
+        RestartTimer();
+    }
+
+    // ✅ FIX 3: Alag method — restart karna easy ho
+    void RestartTimer()
+    {
         if (timerCoroutine != null) StopCoroutine(timerCoroutine);
         timerCoroutine = StartCoroutine(FreeTicketTimerCoroutine());
     }
@@ -159,24 +180,22 @@ public class TicketManager : MonoBehaviour
 
             if (remaining.TotalSeconds <= 0)
             {
-                // Ready hai claim karne ke liye
-                OnTimerUpdated?.Invoke("0h 0m");
+                OnTimerUpdated?.Invoke("0h 0m 0s");
                 OnFreeTicketReady?.Invoke();
                 yield break;
             }
-            else
-            {
-                string timeStr = $"{(int)remaining.TotalHours}h {remaining.Minutes}m";
-                OnTimerUpdated?.Invoke(timeStr);
-            }
 
-            yield return new WaitForSeconds(60f); // har minute update
+            int hours = (int)remaining.TotalHours;
+            int minutes = remaining.Minutes;
+            int seconds = remaining.Seconds;
+            OnTimerUpdated?.Invoke($"{hours}h {minutes}m {seconds}s");
+
+            yield return new WaitForSeconds(1f);
         }
     }
 
     public void ClaimFreeTicket()
     {
-        // Timer check
         DateTime nextFreeTime = lastFreeTicketTime.AddHours(freeTicketIntervalHours);
         if (DateTime.UtcNow < nextFreeTime)
         {
@@ -184,28 +203,21 @@ public class TicketManager : MonoBehaviour
             return;
         }
 
-        // Ticket add karo
         AddPinkTicket(1);
 
-        // Timer reset
         lastFreeTicketTime = DateTime.UtcNow;
-        PlayerPrefs.SetString("LastFreeTicketTime", lastFreeTicketTime.ToString());
+
+        // ✅ FIX 2: Safe format save karo
+        PlayerPrefs.SetString("LastFreeTicketTime",
+            lastFreeTicketTime.ToString("O")); // "O" = Round-trip format, locale-safe
         PlayerPrefs.Save();
 
-        // Timer dobara shuru
-        if (timerCoroutine != null) StopCoroutine(timerCoroutine);
-        timerCoroutine = StartCoroutine(FreeTicketTimerCoroutine());
-
+        RestartTimer();
         Debug.Log("Free ticket claimed!");
     }
 
-    // =============================================
-    // AD TICKET REWARD
-    // =============================================
     public void OnAdWatched()
     {
-        // Yeh rewarded ad complete hone pe call karo
         AddPinkTicket(1);
-        Debug.Log("Ad ticket added!");
     }
 }

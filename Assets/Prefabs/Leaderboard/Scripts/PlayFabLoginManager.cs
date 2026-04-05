@@ -10,6 +10,9 @@ public class PlayFabLoginManager : MonoBehaviour
 {
     public static PlayFabLoginManager Instance;
 
+    // GameAnimation subscribes to this to know when to start the video
+    public static event Action OnLoginComplete;
+
     public string UserName;
 
     [Header("PlayFab Settings")]
@@ -76,7 +79,6 @@ public class PlayFabLoginManager : MonoBehaviour
     // =============================================
     private void AutoLogin()
     {
-        // ✅ Agar username/password saved hai to directly PlayFab se login karo
         if (PlayerPrefs.HasKey("SavedUsername") && PlayerPrefs.HasKey("SavedPassword"))
         {
             string savedUsername = PlayerPrefs.GetString("SavedUsername");
@@ -90,19 +92,21 @@ public class PlayFabLoginManager : MonoBehaviour
 
             PlayFabClientAPI.LoginWithPlayFab(request, OnLoginSuccess, error =>
             {
-                // Credentials invalid ya expired — login panel dikhao
                 Debug.LogWarning("Auto login failed: " + error.ErrorMessage);
                 PlayerPrefs.DeleteKey("SavedUsername");
                 PlayerPrefs.DeleteKey("SavedPassword");
                 PlayerPrefs.Save();
 
+                // Show login screen only on failure
                 if (LoginScreen != null) LoginScreen.SetActive(true);
                 ShowLoginPanel();
             });
+
+            // Don't show login screen yet — wait for auto login result
         }
         else
         {
-            // Pehli baar — login panel dikhao
+            // No saved credentials — show login screen
             if (LoginScreen != null) LoginScreen.SetActive(true);
             ShowLoginPanel();
         }
@@ -130,7 +134,6 @@ public class PlayFabLoginManager : MonoBehaviour
         PlayFabClientAPI.LoginWithPlayFab(request,
             result =>
             {
-                // ✅ Login success — credentials save karo
                 PlayerPrefs.SetString("SavedUsername", loginUsernameInput.text);
                 PlayerPrefs.SetString("SavedPassword", loginPasswordInput.text);
                 PlayerPrefs.Save();
@@ -151,7 +154,7 @@ public class PlayFabLoginManager : MonoBehaviour
     }
 
     // =============================================
-    // REGISTER — Check username first, then register
+    // REGISTER
     // =============================================
     public void RegisterUser()
     {
@@ -189,23 +192,14 @@ public class PlayFabLoginManager : MonoBehaviour
         error =>
         {
             if (error.Error == PlayFabErrorCode.AccountNotFound)
-            {
                 ProceedWithRegistration();
-            }
             else if (error.Error == PlayFabErrorCode.InvalidUsernameOrPassword)
-            {
                 registerStatus.text = "Username is already taken. Please choose another.";
-            }
             else
-            {
                 registerStatus.text = "Check failed: " + error.ErrorMessage;
-            }
         });
     }
 
-    // =============================================
-    // PROCEED WITH REGISTRATION
-    // =============================================
     private void ProceedWithRegistration()
     {
         registerStatus.text = "Creating account...";
@@ -239,18 +233,15 @@ public class PlayFabLoginManager : MonoBehaviour
         registerStatus.text = "Account created! Logging in...";
         UserName = registerUsernameInput.text;
 
-        // ✅ Register hote hi credentials save karo
         PlayerPrefs.SetString("SavedUsername", registerUsernameInput.text);
         PlayerPrefs.SetString("SavedPassword", registerPasswordInput.text);
         PlayerPrefs.Save();
 
-        // Display name set karo
         PlayFabClientAPI.UpdateUserTitleDisplayName(
             new UpdateUserTitleDisplayNameRequest { DisplayName = registerUsernameInput.text },
             nameResult => Debug.Log("Display name set: " + nameResult.DisplayName),
             error => Debug.LogError("Display name failed: " + error.ErrorMessage));
 
-        // Auto login after register
         var loginRequest = new LoginWithPlayFabRequest
         {
             Username = registerUsernameInput.text,
@@ -258,27 +249,21 @@ public class PlayFabLoginManager : MonoBehaviour
         };
 
         PlayFabClientAPI.LoginWithPlayFab(loginRequest, OnLoginSuccess,
-            error =>
-            {
-                registerStatus.text = "Auto login failed: " + error.ErrorMessage;
-            });
+            error => { registerStatus.text = "Auto login failed: " + error.ErrorMessage; });
 
 
-        TicketManager.Instance.FetchTicketBalance();
-        TicketManager.Instance.LoadFreeTicketTimer();
-
-        Panel_Register.SetActive(false);
+        if (Panel_Register != null) Panel_Register.SetActive(false);
+        OnLoginComplete?.Invoke();
     }
 
     // =============================================
-    // LOGIN SUCCESS
+    // LOGIN SUCCESS — called from all login paths
     // =============================================
     private void OnLoginSuccess(LoginResult result)
     {
         currentPlayerId = result.PlayFabId;
         PlayerPrefs.SetString("PlayFabID", result.PlayFabId);
 
-        // Custom ID link karo auto-login backup ke liye
         if (!PlayerPrefs.HasKey("PlayFabCustomID"))
         {
             string customId = Guid.NewGuid().ToString();
@@ -287,7 +272,7 @@ public class PlayFabLoginManager : MonoBehaviour
 
             PlayFabClientAPI.LinkCustomID(
                 new LinkCustomIDRequest { CustomId = customId, ForceLink = true },
-                s => Debug.Log("Custom ID linked — auto login ready"),
+                s => Debug.Log("Custom ID linked"),
                 e => Debug.LogError("Link failed: " + e.GenerateErrorReport()));
         }
         else
@@ -302,7 +287,6 @@ public class PlayFabLoginManager : MonoBehaviour
                 e => Debug.Log("Already linked: " + e.ErrorMessage));
         }
 
-        // Display name fetch karo
         PlayFabClientAPI.GetPlayerProfile(new GetPlayerProfileRequest
         {
             PlayFabId = result.PlayFabId,
@@ -315,11 +299,13 @@ public class PlayFabLoginManager : MonoBehaviour
         },
         error => Debug.LogError("Profile fetch failed: " + error.ErrorMessage));
 
+        // Hide login screen
         if (LoginScreen != null) LoginScreen.SetActive(false);
+
         Debug.Log("Login Success: " + result.PlayFabId);
 
-        TicketManager.Instance.FetchTicketBalance();
-        TicketManager.Instance.LoadFreeTicketTimer();
+        // Fire event — GameAnimation will receive this and start the video
+        OnLoginComplete?.Invoke();
     }
 
     // =============================================

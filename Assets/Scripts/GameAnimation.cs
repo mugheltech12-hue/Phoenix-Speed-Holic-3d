@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -8,10 +7,20 @@ public class GameAnimation : MonoBehaviour
 {
     public VideoPlayer gameOverAnimation;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
+        // Subscribe — video will play once login completes
+        PlayFabLoginManager.OnLoginComplete += StartVideo;
+    }
 
+    private void OnDisable()
+    {
+        // Always unsubscribe to avoid memory leaks
+        PlayFabLoginManager.OnLoginComplete -= StartVideo;
+    }
+
+    private void StartVideo()
+    {
         gameOverAnimation.Play();
         gameOverAnimation.loopPointReached += OnCutSceneEnded;
     }
@@ -20,8 +29,6 @@ public class GameAnimation : MonoBehaviour
     {
         PlayerPrefs.SetInt("VideoPlayed", 1);
         PlayerPrefs.Save();
-
-        //gameOverAnimation.gameObject.SetActive(false);
         SceneManager.LoadScene("GameScene_ModeT");
     }
 }
