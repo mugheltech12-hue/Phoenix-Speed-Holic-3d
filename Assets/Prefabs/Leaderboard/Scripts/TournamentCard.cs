@@ -68,7 +68,7 @@ public class TournamentCard : MonoBehaviour
                 });
             };
 
-            SetUnlocked("WEEKLY TOURNAMENT", "$50 Gift Card");
+            SetUnlocked("WEEKLY TOURNAMENT", "1x");
         }
     }
 

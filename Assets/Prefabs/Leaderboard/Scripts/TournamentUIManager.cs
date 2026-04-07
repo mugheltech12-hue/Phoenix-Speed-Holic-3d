@@ -53,7 +53,7 @@ public class TournamentUIManager : MonoBehaviour
         //quitBtn.onClick.AddListener(OnQuit);
 
         // ✅ Weekly = Unlocked, Daily + Monthly = Locked
-        weeklyCard.SetUnlocked("WEEKLY TOURNAMENT", "$50 Gift Card");
+        weeklyCard.SetUnlocked("WEEKLY TOURNAMENT", "1x");
         dailyCard.SetLocked();
         monthlyCard.SetLocked();
 
