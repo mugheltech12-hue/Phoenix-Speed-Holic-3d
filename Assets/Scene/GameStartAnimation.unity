@@ -1467,7 +1467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233599dcfbcf54f4fa9b1e3e708dc6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  appKey: fee50c333ff3825fd6ad6d38cff78154de3025546d47a84f
+  appKey: 1e4ed895e910abcac25f7189f119803dbfab006c5e37dd4d
   bannerPosition: 0
   useSmartBanner: 1
   enableInterstitial: 1
@@ -5940,7 +5940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UserName: 
-  playFabId: 187694
+  playFabId: 16F530
   LoginScreen: {fileID: 595358994}
   Panel_Main: {fileID: 782307525}
   Panel_Login: {fileID: 595358994}

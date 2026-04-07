@@ -3,32 +3,80 @@
   "WorkspaceRootPath": "D:\\Unity Projects\\PhoenixGod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\tournamentuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\tournamentuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\gameanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\tournamentcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\tournamentcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\tournamentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\tournamentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\codes\\pausingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\codes\\pausingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\leaderboardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\leaderboardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\tournamentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\tournamentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\leaderboarduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\leaderboarduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\leaderboardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\leaderboardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\tournamentcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\tournamentcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\tournamentuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\tournamentuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\adsmanager\\showbanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\adsmanager\\showbanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\collisioncheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\collisioncheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\ringsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\ringsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\gameanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\endingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\endingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\appodeal\\common\\ibanneradlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\appodeal\\common\\ibanneradlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\playfabloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\playfabloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\skinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\skinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\codes\\blinkimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\codes\\blinkimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\ticketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\ticketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F926B8C9-E680-18D9-EF8F-5483895D7B7E}|PlayFab.csproj|d:\\unity projects\\phoenixgod\\assets\\playfabsdk\\shared\\internal\\playfabhttp\\playfabunityhttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F926B8C9-E680-18D9-EF8F-5483895D7B7E}|PlayFab.csproj|solutionrelative:assets\\playfabsdk\\shared\\internal\\playfabhttp\\playfabunityhttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\tournamentpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,28 +87,8 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\uibuttonlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\endingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\endingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\ticketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\ticketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\ringsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\ringsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\bordercubealigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\bordercubealigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\collisioncheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\collisioncheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\gamemanager_modeg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,28 +103,12 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\maincontroller_modeg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\adsmanager\\adsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\adsmanager\\adsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\prefabs\\leaderboard\\scripts\\playfabloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\prefabs\\leaderboard\\scripts\\playfabloginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\adsmanager\\showbanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\adsmanager\\showbanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\appodeal\\api\\appodeal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\appodeal\\api\\appodeal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\appodeal\\common\\ibanneradlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\appodeal\\common\\ibanneradlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\appodeal\\platforms\\android\\androidappodealclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74E0D3A7-19C5-40BE-F11E-E5A32DC37A5D}|Assembly-CSharp-Editor.csproj|d:\\unity projects\\phoenixgod\\assets\\editor\\roadaligner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74E0D3A7-19C5-40BE-F11E-E5A32DC37A5D}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\roadaligner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\unity projects\\phoenixgod\\assets\\scripts\\assembly-csharp\\skinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\assembly-csharp\\skinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,11 +130,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "TournamentPanelController.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentPanelController.cs",
               "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentPanelController.cs",
@@ -135,38 +143,35 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-28T04:34:15.19Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ShowBanner.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\AdsManager\\ShowBanner.cs",
-              "RelativeDocumentMoniker": "Assets\\AdsManager\\ShowBanner.cs",
-              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\AdsManager\\ShowBanner.cs",
-              "RelativeToolTip": "Assets\\AdsManager\\ShowBanner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "BlinkImage.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Codes\\BlinkImage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Codes\\BlinkImage.cs",
+              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Codes\\BlinkImage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Codes\\BlinkImage.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAwwB4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T10:59:02.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T05:48:52.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IBannerAdListener.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Appodeal\\Common\\IBannerAdListener.cs",
-              "RelativeDocumentMoniker": "Assets\\Appodeal\\Common\\IBannerAdListener.cs",
-              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Appodeal\\Common\\IBannerAdListener.cs",
-              "RelativeToolTip": "Assets\\Appodeal\\Common\\IBannerAdListener.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "PlayFabUnityHttp.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\PlayFabSDK\\Shared\\Internal\\PlayFabHttp\\PlayFabUnityHttp.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayFabSDK\\Shared\\Internal\\PlayFabHttp\\PlayFabUnityHttp.cs",
+              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\PlayFabSDK\\Shared\\Internal\\PlayFabHttp\\PlayFabUnityHttp.cs",
+              "RelativeToolTip": "Assets\\PlayFabSDK\\Shared\\Internal\\PlayFabHttp\\PlayFabUnityHttp.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAAAuwBgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T10:56:31.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T04:36:55.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "AndroidAppodealClient.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Appodeal\\Platforms\\Android\\AndroidAppodealClient.cs",
               "RelativeDocumentMoniker": "Assets\\Appodeal\\Platforms\\Android\\AndroidAppodealClient.cs",
@@ -174,12 +179,11 @@
               "RelativeToolTip": "Assets\\Appodeal\\Platforms\\Android\\AndroidAppodealClient.cs",
               "ViewState": "AgIAALMAAAAAAAAAAAAwwMEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T10:54:47.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T10:54:47.561Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "AppodealDemo.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Appodeal\\Demo\\Scripts\\AppodealDemo.cs",
               "RelativeDocumentMoniker": "Assets\\Appodeal\\Demo\\Scripts\\AppodealDemo.cs",
@@ -187,12 +191,11 @@
               "RelativeToolTip": "Assets\\Appodeal\\Demo\\Scripts\\AppodealDemo.cs",
               "ViewState": "AgIAAI4AAAAAAAAAAAAYwKMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T10:40:18.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T10:40:18.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Appodeal.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Appodeal\\Api\\Appodeal.cs",
               "RelativeDocumentMoniker": "Assets\\Appodeal\\Api\\Appodeal.cs",
@@ -200,12 +203,11 @@
               "RelativeToolTip": "Assets\\Appodeal\\Api\\Appodeal.cs",
               "ViewState": "AgIAAL8BAAAAAAAAAAAgwMYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T10:39:14.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T10:39:14.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "AdsManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\AdsManager\\AdsManager.cs",
               "RelativeDocumentMoniker": "Assets\\AdsManager\\AdsManager.cs",
@@ -213,70 +215,101 @@
               "RelativeToolTip": "Assets\\AdsManager\\AdsManager.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowCUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T10:35:04.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T10:35:04.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "TicketManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TicketManager.cs",
               "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\TicketManager.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TicketManager.cs",
               "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\Scripts\\TicketManager.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAowN4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAgwN4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T07:37:59.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-27T07:37:59.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "TournamentUIManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentUIManager.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentUIManager.cs",
               "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentUIManager.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAwwIIAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAqwIcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T07:31:28.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-27T07:31:28.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 5,
+              "Title": "TournamentCard.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentCard.cs",
+              "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentCard.cs",
+              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentCard.cs",
+              "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentCard.cs",
+              "ViewState": "AgIAAIIBAAAAAAAAAAAowJ4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T07:36:06.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBannerAdListener.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Appodeal\\Common\\IBannerAdListener.cs",
+              "RelativeDocumentMoniker": "Assets\\Appodeal\\Common\\IBannerAdListener.cs",
+              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Appodeal\\Common\\IBannerAdListener.cs",
+              "RelativeToolTip": "Assets\\Appodeal\\Common\\IBannerAdListener.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T10:56:31.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShowBanner.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\AdsManager\\ShowBanner.cs",
+              "RelativeDocumentMoniker": "Assets\\AdsManager\\ShowBanner.cs",
+              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\AdsManager\\ShowBanner.cs",
+              "RelativeToolTip": "Assets\\AdsManager\\ShowBanner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T10:59:02.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "PlayFabLoginManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\PlayFabLoginManager.cs",
               "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\PlayFabLoginManager.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\PlayFabLoginManager.cs",
               "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\Scripts\\PlayFabLoginManager.cs",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAhwPgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAABwBAAAAAAAAAAApwCUBAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T07:45:54.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-27T07:45:54.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "LeaderboardUIManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\LeaderboardUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\LeaderboardUIManager.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\LeaderboardUIManager.cs",
               "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\Scripts\\LeaderboardUIManager.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAwwG8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwG8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T12:13:55.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-27T12:13:55.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "TournamentManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentManager.cs",
               "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentManager.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentManager.cs",
               "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentManager.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAIwM4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAwEAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-27T07:37:01.573Z",
               "EditorCaption": ""
@@ -289,40 +322,26 @@
               "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\LeaderboardManager.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\LeaderboardManager.cs",
               "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\Scripts\\LeaderboardManager.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAwwIcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAowHAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T07:34:21.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-27T07:34:21.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PausingManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Codes\\PausingManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Codes\\PausingManager.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Codes\\PausingManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Codes\\PausingManager.cs",
-              "ViewState": "AgIAAFMCAAAAAAAAAAA6wFgCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIYBAAAAAAAAAIAwwHwBAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T08:47:05.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TournamentCard.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentCard.cs",
-              "RelativeDocumentMoniker": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentCard.cs",
-              "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentCard.cs",
-              "RelativeToolTip": "Assets\\Prefabs\\Leaderboard\\Scripts\\TournamentCard.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAmwLkAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T07:36:06.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "GameAnimation.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\GameAnimation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameAnimation.cs",
@@ -330,12 +349,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameAnimation.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T03:53:35.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T03:53:35.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "EndingManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\EndingManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\EndingManager.cs",
@@ -343,25 +361,23 @@
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\EndingManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T07:43:14.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T07:43:14.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\GameManager.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\GameManager.cs",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAwwBEBAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAJACAAAAAAAAAAAQwKECAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T08:33:22.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T08:33:22.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "UIButtonListener.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\UIButtonListener.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\UIButtonListener.cs",
@@ -369,12 +385,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\UIButtonListener.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T05:49:22.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T05:49:22.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "BorderCubeAligner.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\BorderCubeAligner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\BorderCubeAligner.cs",
@@ -382,12 +397,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\BorderCubeAligner.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwBgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T12:16:46.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T12:16:46.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "RoadAligner.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Editor\\RoadAligner.cs",
               "RelativeDocumentMoniker": "Assets\\Editor\\RoadAligner.cs",
@@ -399,20 +413,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 8,
               "Title": "MainController.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\MainController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\MainController.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\MainController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\MainController.cs",
-              "ViewState": "AgIAAPQAAAAAAAAAAAAAAP8AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAqwP0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T08:34:23.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T08:34:23.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "MainController_ModeG.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\MainController_ModeG.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\MainController_ModeG.cs",
@@ -420,12 +433,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\MainController_ModeG.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAIwAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T05:54:04.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T05:54:04.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "GameManager_ModeG.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\GameManager_ModeG.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\GameManager_ModeG.cs",
@@ -433,12 +445,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\GameManager_ModeG.cs",
               "ViewState": "AgIAAL4AAAAAAAAAAAAcwHYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T05:52:57.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T05:52:57.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
               "Title": "CollisionCheck.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\CollisionCheck.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\CollisionCheck.cs",
@@ -446,12 +457,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\CollisionCheck.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T05:52:25.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T05:52:25.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "PauseManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\PauseManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\PauseManager.cs",
@@ -459,12 +469,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\PauseManager.cs",
               "ViewState": "AgIAAJoAAAAAAAAAAAAcwLYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T05:42:14.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T05:42:14.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 15,
               "Title": "SkinManager.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\SkinManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\SkinManager.cs",
@@ -476,16 +485,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "RingSetting.cs",
               "DocumentMoniker": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\RingSetting.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Assembly-CSharp\\RingSetting.cs",
               "ToolTip": "D:\\Unity Projects\\PhoenixGod\\Assets\\Scripts\\Assembly-CSharp\\RingSetting.cs",
               "RelativeToolTip": "Assets\\Scripts\\Assembly-CSharp\\RingSetting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T05:35:19.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T05:35:19.027Z"
             }
           ]
         }

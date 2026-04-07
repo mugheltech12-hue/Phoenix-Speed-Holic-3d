@@ -183,7 +183,9 @@ public class PausingManager : MonoBehaviour
     {
         // Counter show karo middle mein
 
+       
         TournamentPanelController.Instance.CloseTournament(); // ✅ Tournament panel band karo
+        TournamentUIManager.Instance.rulesPanel.SetActive(false);
         startCountText.gameObject.SetActive(true);
 
         if (countDownCoroutine != null)
